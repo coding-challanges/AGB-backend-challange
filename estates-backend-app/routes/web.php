@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/properties', 'PropertyController@getProperty');
+Route::get('/propertyAnalytics/{id}', 'AnalyticsController@getPropertyAnalytics');
+Route::get('/property/{suburb}', 'AnalyticsController@getSummarySuburb');
